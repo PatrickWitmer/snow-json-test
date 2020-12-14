@@ -1,10 +1,4 @@
 function fetchData() {
-  var stringToHTML = function (str) {
-    var parser = new DOMParser();
-    var doc = parser.parseFromString(str, 'text/html');
-    return doc.body;
-  };
-
   fetch('https://www.reddit.com/r/BlackMetal.json')
     .then((response) => {
       if (!response.ok) {
@@ -34,7 +28,7 @@ function fetchData() {
                   ? `
               `
                   : `
-              ${stringToHTML(metal.data.media_embed.content)}
+              ${metal.data.media_embed.content}
               `
               }
           </div>
