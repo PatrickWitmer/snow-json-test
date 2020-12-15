@@ -1,3 +1,6 @@
+// https://api.weatherunlocked.com/api/resortforecast/801010?app_id=49a3dadd&app_key=7c4d3b8809b054ce270efe85acecfa79
+// testing key
+
 function fetchData() {
   fetch('https://www.reddit.com/r/BlackMetal.json')
     .then((response) => {
